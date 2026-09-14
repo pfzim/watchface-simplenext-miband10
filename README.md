@@ -7,7 +7,7 @@
 |:---:|:---:|:---:|
 | Сердцебиение, калории, шаги | AOD | Только шаги |
 
-Скачать готовый циферблат можно в разделе [Releases](/releases)
+Скачать готовый циферблат можно в разделе [Releases](https://github.com/pfzim/watchface-simplenext-miband10/releases)
 
 Собрать из исходного проекта можно с помощью WatchfaceCompiler:
 ```
