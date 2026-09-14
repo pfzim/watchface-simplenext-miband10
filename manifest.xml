@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Watchface id="117459711" name="SimpleNext_v3.1">
+    <Resources>
+        <!--Resources of theme 0-->
+        <Image name="preview_0" src="preview_0.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="preview_1" src="preview_1.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="preview_aod" src="preview_aod.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="dot_sign_full_screen" src="full_screen_dot.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="celsius_sign_big" src="celsius_big.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="slash_sign" src="slash.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="colon_sign" src="colon.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="colon_sign_grey" src="colon_grey.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="celsius_sign_small" src="celsius_small.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="heart_icon" src="heart.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="calories_icon" src="calories.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="steps_icon" src="steps.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <ImageArray name="numbers_big_white" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="numbers_big_white/0.png"/>
+            <Image src="numbers_big_white/1.png"/>
+            <Image src="numbers_big_white/2.png"/>
+            <Image src="numbers_big_white/3.png"/>
+            <Image src="numbers_big_white/4.png"/>
+            <Image src="numbers_big_white/5.png"/>
+            <Image src="numbers_big_white/6.png"/>
+            <Image src="numbers_big_white/7.png"/>
+            <Image src="numbers_big_white/8.png"/>
+            <Image src="numbers_big_white/9.png"/>
+            <Image src="numbers_big_white/10.png"/>
+        </ImageArray>
+        <ImageArray name="day_of_week_name" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="day_of_week_name/0.png"/>
+            <Image src="day_of_week_name/1.png"/>
+            <Image src="day_of_week_name/2.png"/>
+            <Image src="day_of_week_name/3.png"/>
+            <Image src="day_of_week_name/4.png"/>
+            <Image src="day_of_week_name/5.png"/>
+            <Image src="day_of_week_name/6.png"/>
+        </ImageArray>
+        <ImageArray name="battery_icon" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="battery_icon/0.png"/>
+            <Image src="battery_icon/1.png"/>
+            <Image src="battery_icon/2.png"/>
+            <Image src="battery_icon/3.png"/>
+            <Image src="battery_icon/4.png"/>
+            <Image src="battery_icon/5.png"/>
+            <Image src="battery_icon/6.png"/>
+            <Image src="battery_icon/7.png"/>
+            <Image src="battery_icon/8.png"/>
+            <Image src="battery_icon/9.png"/>
+        </ImageArray>
+        <ImageArray name="numbers_small_bold_grey" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="numbers_small_bold_grey/0.png"/>
+            <Image src="numbers_small_bold_grey/1.png"/>
+            <Image src="numbers_small_bold_grey/2.png"/>
+            <Image src="numbers_small_bold_grey/3.png"/>
+            <Image src="numbers_small_bold_grey/4.png"/>
+            <Image src="numbers_small_bold_grey/5.png"/>
+            <Image src="numbers_small_bold_grey/6.png"/>
+            <Image src="numbers_small_bold_grey/7.png"/>
+            <Image src="numbers_small_bold_grey/8.png"/>
+            <Image src="numbers_small_bold_grey/9.png"/>
+            <Image src="numbers_small_bold_grey/10.png"/>
+        </ImageArray>
+        <ImageArray name="numbers_medium_white" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="numbers_medium_white/0.png"/>
+            <Image src="numbers_medium_white/1.png"/>
+            <Image src="numbers_medium_white/2.png"/>
+            <Image src="numbers_medium_white/3.png"/>
+            <Image src="numbers_medium_white/4.png"/>
+            <Image src="numbers_medium_white/5.png"/>
+            <Image src="numbers_medium_white/6.png"/>
+            <Image src="numbers_medium_white/7.png"/>
+            <Image src="numbers_medium_white/8.png"/>
+            <Image src="numbers_medium_white/9.png"/>
+            <Image src="numbers_medium_white/10.png"/>
+        </ImageArray>
+        <ImageArray name="numbers_medium_grey" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="numbers_medium_grey/0.png"/>
+            <Image src="numbers_medium_grey/1.png"/>
+            <Image src="numbers_medium_grey/2.png"/>
+            <Image src="numbers_medium_grey/3.png"/>
+            <Image src="numbers_medium_grey/4.png"/>
+            <Image src="numbers_medium_grey/5.png"/>
+            <Image src="numbers_medium_grey/6.png"/>
+            <Image src="numbers_medium_grey/7.png"/>
+            <Image src="numbers_medium_grey/8.png"/>
+            <Image src="numbers_medium_grey/9.png"/>
+            <Image src="numbers_medium_grey/10.png"/>
+        </ImageArray>
+        <!--
+		<ImageArray name="seconds_as_colon" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="seconds_as_colon/0.png"/>
+            <Image src="seconds_as_colon/1.png"/>
+            <Image src="seconds_as_colon/2.png"/>
+            <Image src="seconds_as_colon/3.png"/>
+            <Image src="seconds_as_colon/4.png"/>
+            <Image src="seconds_as_colon/5.png"/>
+            <Image src="seconds_as_colon/6.png"/>
+            <Image src="seconds_as_colon/7.png"/>
+            <Image src="seconds_as_colon/8.png"/>
+            <Image src="seconds_as_colon/9.png"/>
+            <Image src="seconds_as_colon/10.png"/>
+            <Image src="seconds_as_colon/11.png"/>
+            <Image src="seconds_as_colon/12.png"/>
+            <Image src="seconds_as_colon/13.png"/>
+            <Image src="seconds_as_colon/14.png"/>
+            <Image src="seconds_as_colon/15.png"/>
+            <Image src="seconds_as_colon/16.png"/>
+            <Image src="seconds_as_colon/17.png"/>
+            <Image src="seconds_as_colon/18.png"/>
+            <Image src="seconds_as_colon/19.png"/>
+            <Image src="seconds_as_colon/20.png"/>
+            <Image src="seconds_as_colon/21.png"/>
+            <Image src="seconds_as_colon/22.png"/>
+            <Image src="seconds_as_colon/23.png"/>
+            <Image src="seconds_as_colon/24.png"/>
+            <Image src="seconds_as_colon/25.png"/>
+            <Image src="seconds_as_colon/26.png"/>
+            <Image src="seconds_as_colon/27.png"/>
+            <Image src="seconds_as_colon/28.png"/>
+            <Image src="seconds_as_colon/29.png"/>
+            <Image src="seconds_as_colon/30.png"/>
+            <Image src="seconds_as_colon/31.png"/>
+            <Image src="seconds_as_colon/32.png"/>
+            <Image src="seconds_as_colon/33.png"/>
+            <Image src="seconds_as_colon/34.png"/>
+            <Image src="seconds_as_colon/35.png"/>
+            <Image src="seconds_as_colon/36.png"/>
+            <Image src="seconds_as_colon/37.png"/>
+            <Image src="seconds_as_colon/38.png"/>
+            <Image src="seconds_as_colon/39.png"/>
+            <Image src="seconds_as_colon/40.png"/>
+            <Image src="seconds_as_colon/41.png"/>
+            <Image src="seconds_as_colon/42.png"/>
+            <Image src="seconds_as_colon/43.png"/>
+            <Image src="seconds_as_colon/44.png"/>
+            <Image src="seconds_as_colon/45.png"/>
+            <Image src="seconds_as_colon/46.png"/>
+            <Image src="seconds_as_colon/47.png"/>
+            <Image src="seconds_as_colon/48.png"/>
+            <Image src="seconds_as_colon/49.png"/>
+            <Image src="seconds_as_colon/50.png"/>
+            <Image src="seconds_as_colon/51.png"/>
+            <Image src="seconds_as_colon/52.png"/>
+            <Image src="seconds_as_colon/53.png"/>
+            <Image src="seconds_as_colon/54.png"/>
+            <Image src="seconds_as_colon/55.png"/>
+            <Image src="seconds_as_colon/56.png"/>
+            <Image src="seconds_as_colon/57.png"/>
+            <Image src="seconds_as_colon/58.png"/>
+            <Image src="seconds_as_colon/59.png"/>
+        </ImageArray>
+		-->
+        <ImageArray name="weather_icons" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="weather_icons/0.png"/>
+            <Image src="weather_icons/1.png"/>
+            <Image src="weather_icons/2.png"/>
+            <Image src="weather_icons/3.png"/>
+            <Image src="weather_icons/4.png"/>
+            <Image src="weather_icons/5.png"/>
+            <Image src="weather_icons/6.png"/>
+            <Image src="weather_icons/7.png"/>
+            <Image src="weather_icons/8.png"/>
+            <Image src="weather_icons/9.png"/>
+            <Image src="weather_icons/10.png"/>
+            <Image src="weather_icons/11.png"/>
+            <Image src="weather_icons/12.png"/>
+            <Image src="weather_icons/13.png"/>
+            <Image src="weather_icons/14.png"/>
+            <Image src="weather_icons/15.png"/>
+            <Image src="weather_icons/16.png"/>
+            <Image src="weather_icons/17.png"/>
+            <Image src="weather_icons/18.png"/>
+            <Image src="weather_icons/19.png"/>
+            <Image src="weather_icons/20.png"/>
+            <Image src="weather_icons/21.png"/>
+            <Image src="weather_icons/22.png"/>
+            <Image src="weather_icons/23.png"/>
+        </ImageArray>
+        <ImageArray name="bluetooth_icon" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="bluetooth_icon/0.png"/>
+            <Image src="bluetooth_icon/1.png"/>
+        </ImageArray>
+        <ImageArray name="dnd_icon" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="dnd_icon/0.png"/>
+            <Image src="dnd_icon/1.png"/>
+        </ImageArray>
+        <ImageArray name="numbers_small_grey" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="numbers_small_grey/0.png"/>
+            <Image src="numbers_small_grey/1.png"/>
+            <Image src="numbers_small_grey/2.png"/>
+            <Image src="numbers_small_grey/3.png"/>
+            <Image src="numbers_small_grey/4.png"/>
+            <Image src="numbers_small_grey/5.png"/>
+            <Image src="numbers_small_grey/6.png"/>
+            <Image src="numbers_small_grey/7.png"/>
+            <Image src="numbers_small_grey/8.png"/>
+            <Image src="numbers_small_grey/9.png"/>
+            <Image src="numbers_small_grey/10.png"/>
+        </ImageArray>
+        <DataItemImageValues name="vDayOfWeek" source="dateWeek" ref="@day_of_week_name" renderRule="alwaysShow" rotation="0">
+            <Param value="0"/>
+            <Param value="1"/>
+            <Param value="2"/>
+            <Param value="3"/>
+            <Param value="4"/>
+            <Param value="5"/>
+            <Param value="6"/>
+        </DataItemImageValues>
+        <DataItemImageValues name="vBatteryIcon" source="systemStatusBattery" ref="@battery_icon" renderRule="alwaysShow" rotation="0">
+            <Param value="10"/>
+            <Param value="20"/>
+            <Param value="30"/>
+            <Param value="40"/>
+            <Param value="50"/>
+            <Param value="60"/>
+            <Param value="70"/>
+            <Param value="80"/>
+            <Param value="90"/>
+            <Param value="100"/>
+        </DataItemImageValues>
+        <!--
+		<DataItemImageValues name="vSecondsAsColon" source="timeSecond" ref="@seconds_as_colon" renderRule="alwaysShow" rotation="0">
+            <Param value="0"/>
+            <Param value="1"/>
+            <Param value="2"/>
+            <Param value="3"/>
+            <Param value="4"/>
+            <Param value="5"/>
+            <Param value="6"/>
+            <Param value="7"/>
+            <Param value="8"/>
+            <Param value="9"/>
+            <Param value="10"/>
+            <Param value="11"/>
+            <Param value="12"/>
+            <Param value="13"/>
+            <Param value="14"/>
+            <Param value="15"/>
+            <Param value="16"/>
+            <Param value="17"/>
+            <Param value="18"/>
+            <Param value="19"/>
+            <Param value="20"/>
+            <Param value="21"/>
+            <Param value="22"/>
+            <Param value="23"/>
+            <Param value="24"/>
+            <Param value="25"/>
+            <Param value="26"/>
+            <Param value="27"/>
+            <Param value="28"/>
+            <Param value="29"/>
+            <Param value="30"/>
+            <Param value="31"/>
+            <Param value="32"/>
+            <Param value="33"/>
+            <Param value="34"/>
+            <Param value="35"/>
+            <Param value="36"/>
+            <Param value="37"/>
+            <Param value="38"/>
+            <Param value="39"/>
+            <Param value="40"/>
+            <Param value="41"/>
+            <Param value="42"/>
+            <Param value="43"/>
+            <Param value="44"/>
+            <Param value="45"/>
+            <Param value="46"/>
+            <Param value="47"/>
+            <Param value="48"/>
+            <Param value="49"/>
+            <Param value="50"/>
+            <Param value="51"/>
+            <Param value="52"/>
+            <Param value="53"/>
+            <Param value="54"/>
+            <Param value="55"/>
+            <Param value="56"/>
+            <Param value="57"/>
+            <Param value="58"/>
+            <Param value="59"/>
+        </DataItemImageValues>
+		-->
+        <DataItemImageValues name="vWeatherIcon" source="weatherCurrentWeather" ref="@weather_icons" renderRule="alwaysShow" rotation="0">
+            <Param value="0"/>
+            <Param value="1"/>
+            <Param value="2"/>
+            <Param value="3"/>
+            <Param value="4"/>
+            <Param value="5"/>
+            <Param value="6"/>
+            <Param value="7"/>
+            <Param value="8"/>
+            <Param value="9"/>
+            <Param value="10"/>
+            <Param value="11"/>
+            <Param value="12"/>
+            <Param value="13"/>
+            <Param value="14"/>
+            <Param value="15"/>
+            <Param value="16"/>
+            <Param value="17"/>
+            <Param value="18"/>
+            <Param value="19"/>
+            <Param value="20"/>
+            <Param value="21"/>
+            <Param value="22"/>
+            <Param value="23"/>
+        </DataItemImageValues>
+        <DataItemImageValues name="vBluetoothIcon" source="systemStatusBluetooth" ref="@bluetooth_icon" renderRule="alwaysShow" rotation="0">
+            <Param value="0"/>
+            <Param value="1"/>
+        </DataItemImageValues>
+        <DataItemImageValues name="vDNDIcon" source="systemStatusDisturb" ref="@dnd_icon" renderRule="alwaysShow" rotation="0">
+            <Param value="0"/>
+            <Param value="1"/>
+        </DataItemImageValues>
+        <DataItemImageNumber name="vBatteryPercentage" source="systemStatusBattery" ref="@numbers_small_bold_grey" totalDigits="3" decimalDigits="0" align="right" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vCurrentTemperature" source="weatherCurrentTemperature" ref="@numbers_medium_white" totalDigits="2" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vDay" source="dateDay" ref="@numbers_medium_grey" totalDigits="2" decimalDigits="0" align="right" leadingZero="true" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vMonth" source="dateMonth" ref="@numbers_medium_grey" totalDigits="2" decimalDigits="0" align="right" leadingZero="true" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vHour" source="timeHour" ref="@numbers_big_white" totalDigits="2" decimalDigits="0" align="right" leadingZero="true" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vMinutes" source="timeMinute" ref="@numbers_big_white" totalDigits="2" decimalDigits="0" align="right" leadingZero="true" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vStepCount" source="healthStepCount" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vStepCountCenter" source="healthStepCount" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="center" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vWeatherTempMin" source="weatherTodayTemperatureMin" ref="@numbers_small_grey" totalDigits="2" decimalDigits="0" align="right" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vWeatherTempMax" source="weatherTodayTemperatureMax" ref="@numbers_small_grey" totalDigits="2" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vCalorieCount" source="healthCalorieValue" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vHeartRate" source="healthHeartRate" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <!--Resources of theme 1-->
+    </Resources>
+    <Theme type="normal" name="All" bgColor="#000000" preview="@preview_0">
+        <Layout ref="@dot_sign_full_screen" x="10" y="15"/>
+
+        <Layout ref="@vBluetoothIcon" x="33" y="47"/>
+        <Layout ref="@vDNDIcon" x="60" y="48"/>
+        <Layout ref="@vBatteryPercentage" x="139" y="50"/>
+        <Layout ref="@vBatteryIcon" x="143" y="48"/>
+
+        <Layout ref="@vWeatherIcon" x="45" y="105"/>
+        <Layout ref="@vCurrentTemperature" x="122" y="109"/>
+        <Layout ref="@celsius_sign_big" x="158" y="109"/>
+
+        <Layout ref="@vWeatherTempMin" x="98" y="149"/>
+        <Layout ref="@slash_sign" x="102" y="150"/>
+        <Layout ref="@vWeatherTempMax" x="114" y="149"/>
+        <Layout ref="@celsius_sign_small" x="140" y="148"/>
+
+        <Layout ref="@vHour" x="99" y="192"/>
+        <!--<Layout ref="@vSecondsAsColon" x="100" y="205"/>-->
+        <Layout ref="@colon_sign" x="100" y="205"/>
+        <Layout ref="@vMinutes" x="198" y="192"/>
+
+        <Layout ref="@vDay" x="103" y="295"/>
+        <Layout ref="@vMonth" x="146" y="295"/>
+
+        <Layout ref="@vDayOfWeek" x="35" y="325"/>
+
+        <Layout ref="@heart_icon" x="50" y="413"/>
+        <Layout ref="@vHeartRate" x="83" y="413"/>
+
+        <Layout ref="@calories_icon" x="50" y="441"/>
+        <Layout ref="@vCalorieCount" x="83" y="441"/>
+
+        <Layout ref="@steps_icon" x="53" y="470"/>
+        <Layout ref="@vStepCount" x="83" y="470"/>
+    </Theme>
+    <Theme type="AOD" name="AOD" bgColor="#000000" preview="@preview_aod">
+        <Layout ref="@dot_sign_full_screen" x="10" y="15"/>
+
+        <Layout ref="@vBluetoothIcon" x="33" y="47"/>
+        <Layout ref="@vDNDIcon" x="60" y="48"/>
+        <Layout ref="@vBatteryPercentage" x="139" y="50"/>
+        <Layout ref="@vBatteryIcon" x="143" y="48"/>
+
+        <Layout ref="@vHour" x="99" y="192"/>
+        <!-- <Layout ref="@vSecondsAsColon" x="100" y="205"/> -->
+        <Layout ref="@colon_sign_grey" x="100" y="205"/>
+        <Layout ref="@vMinutes" x="198" y="192"/>
+
+        <Layout ref="@vDay" x="103" y="295"/>
+        <Layout ref="@vMonth" x="146" y="295"/>
+
+        <Layout ref="@vDayOfWeek" x="35" y="325"/>
+    </Theme>
+    <Theme type="normal" name="OnlySteps" bgColor="#000000" preview="@preview_1">
+        <Layout ref="@dot_sign_full_screen" x="10" y="15"/>
+
+        <Layout ref="@vBluetoothIcon" x="33" y="47"/>
+        <Layout ref="@vDNDIcon" x="60" y="48"/>
+        <Layout ref="@vBatteryPercentage" x="139" y="50"/>
+        <Layout ref="@vBatteryIcon" x="143" y="48"/>
+
+        <Layout ref="@vWeatherIcon" x="45" y="105"/>
+        <Layout ref="@vCurrentTemperature" x="122" y="109"/>
+        <Layout ref="@celsius_sign_big" x="158" y="109"/>
+
+        <Layout ref="@vWeatherTempMin" x="98" y="149"/>
+        <Layout ref="@slash_sign" x="102" y="150"/>
+        <Layout ref="@vWeatherTempMax" x="114" y="149"/>
+        <Layout ref="@celsius_sign_small" x="140" y="148"/>
+
+        <Layout ref="@vHour" x="99" y="192"/>
+        <Layout ref="@colon_sign" x="100" y="205"/>
+        <Layout ref="@vMinutes" x="198" y="192"/>
+
+        <Layout ref="@vDay" x="103" y="295"/>
+        <Layout ref="@vMonth" x="146" y="295"/>
+
+        <Layout ref="@vDayOfWeek" x="35" y="325"/>
+
+        <Layout ref="@vStepCountCenter" x="100" y="470"/>
+    </Theme>
+</Watchface>
