@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Watchface id="117459711" name="SimpleNext_v3.1">
+<Watchface id="117459711" name="SimpleNext_v3.2">
     <Resources>
         <!--Resources of theme 0-->
         <Image name="preview_0" src="preview_0.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="preview_1" src="preview_1.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="preview_2" src="preview_2.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="preview_aod" src="preview_aod.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
-        <Image name="dot_sign_full_screen" src="full_screen_dot.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="dot_sign" src="dot.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="celsius_sign_big" src="celsius_big.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="slash_sign" src="slash.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="colon_sign" src="colon.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
@@ -14,6 +15,8 @@
         <Image name="heart_icon" src="heart.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="calories_icon" src="calories.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="steps_icon" src="steps.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="location_icon" src="location.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="km_icon" src="km.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <ImageArray name="numbers_big_white" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="numbers_big_white/0.png"/>
             <Image src="numbers_big_white/1.png"/>
@@ -151,6 +154,48 @@
             <Image src="seconds_as_colon/59.png"/>
         </ImageArray>
 		-->
+        <ImageArray name="kilometers" compressMethod="none" format="RGBA32" recolorEnable="false">
+            <Image src="kilometers/0.png"/>
+            <Image src="kilometers/1.png"/>
+            <Image src="kilometers/2.png"/>
+            <Image src="kilometers/3.png"/>
+            <Image src="kilometers/4.png"/>
+            <Image src="kilometers/5.png"/>
+            <Image src="kilometers/6.png"/>
+            <Image src="kilometers/7.png"/>
+            <Image src="kilometers/8.png"/>
+            <Image src="kilometers/9.png"/>
+            <Image src="kilometers/10.png"/>
+            <Image src="kilometers/11.png"/>
+            <Image src="kilometers/12.png"/>
+            <Image src="kilometers/13.png"/>
+            <Image src="kilometers/14.png"/>
+            <Image src="kilometers/15.png"/>
+            <Image src="kilometers/16.png"/>
+            <Image src="kilometers/17.png"/>
+            <Image src="kilometers/18.png"/>
+            <Image src="kilometers/19.png"/>
+            <Image src="kilometers/20.png"/>
+            <Image src="kilometers/21.png"/>
+            <Image src="kilometers/22.png"/>
+            <Image src="kilometers/23.png"/>
+            <Image src="kilometers/24.png"/>
+            <Image src="kilometers/25.png"/>
+            <Image src="kilometers/26.png"/>
+            <Image src="kilometers/27.png"/>
+            <Image src="kilometers/28.png"/>
+            <Image src="kilometers/29.png"/>
+            <Image src="kilometers/30.png"/>
+            <Image src="kilometers/31.png"/>
+            <Image src="kilometers/32.png"/>
+            <Image src="kilometers/33.png"/>
+            <Image src="kilometers/34.png"/>
+            <Image src="kilometers/35.png"/>
+            <Image src="kilometers/36.png"/>
+            <Image src="kilometers/37.png"/>
+            <Image src="kilometers/38.png"/>
+            <Image src="kilometers/39.png"/>
+        </ImageArray>
         <ImageArray name="weather_icons" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="weather_icons/0.png"/>
             <Image src="weather_icons/1.png"/>
@@ -283,6 +328,48 @@
             <Param value="59"/>
         </DataItemImageValues>
 		-->
+        <DataItemImageValues name="vKilometers" source="healthStepCount" ref="@kilometers" renderRule="alwaysShow" rotation="0">
+            <Param value="0"/>
+            <Param value="500"/>
+            <Param value="1000"/>
+            <Param value="1500"/>
+            <Param value="2000"/>
+            <Param value="2500"/>
+            <Param value="3000"/>
+            <Param value="3500"/>
+            <Param value="4000"/>
+            <Param value="4500"/>
+            <Param value="5000"/>
+            <Param value="5500"/>
+            <Param value="6000"/>
+            <Param value="6500"/>
+            <Param value="7000"/>
+            <Param value="7500"/>
+            <Param value="8000"/>
+            <Param value="8500"/>
+            <Param value="9000"/>
+            <Param value="9500"/>
+            <Param value="10000"/>
+            <Param value="10500"/>
+            <Param value="11000"/>
+            <Param value="11500"/>
+            <Param value="12000"/>
+            <Param value="12500"/>
+            <Param value="13000"/>
+            <Param value="13500"/>
+            <Param value="14000"/>
+            <Param value="14500"/>
+            <Param value="15000"/>
+            <Param value="15500"/>
+            <Param value="16000"/>
+            <Param value="16500"/>
+            <Param value="17000"/>
+            <Param value="17500"/>
+            <Param value="18000"/>
+            <Param value="18500"/>
+            <Param value="19000"/>
+            <Param value="19500"/>
+        </DataItemImageValues>
         <DataItemImageValues name="vWeatherIcon" source="weatherCurrentWeather" ref="@weather_icons" renderRule="alwaysShow" rotation="0">
             <Param value="0"/>
             <Param value="1"/>
@@ -332,8 +419,6 @@
         <!--Resources of theme 1-->
     </Resources>
     <Theme type="normal" name="All" bgColor="#000000" preview="@preview_0">
-        <Layout ref="@dot_sign_full_screen" x="10" y="15"/>
-
         <Layout ref="@vBluetoothIcon" x="33" y="47"/>
         <Layout ref="@vDNDIcon" x="60" y="48"/>
         <Layout ref="@vBatteryPercentage" x="139" y="50"/>
@@ -354,6 +439,7 @@
         <Layout ref="@vMinutes" x="198" y="192"/>
 
         <Layout ref="@vDay" x="103" y="295"/>
+        <Layout ref="@dot_sign" x="103" y="312"/>
         <Layout ref="@vMonth" x="146" y="295"/>
 
         <Layout ref="@vDayOfWeek" x="35" y="325"/>
@@ -368,8 +454,6 @@
         <Layout ref="@vStepCount" x="83" y="470"/>
     </Theme>
     <Theme type="AOD" name="AOD" bgColor="#000000" preview="@preview_aod">
-        <Layout ref="@dot_sign_full_screen" x="10" y="15"/>
-
         <Layout ref="@vBluetoothIcon" x="33" y="47"/>
         <Layout ref="@vDNDIcon" x="60" y="48"/>
         <Layout ref="@vBatteryPercentage" x="139" y="50"/>
@@ -381,13 +465,12 @@
         <Layout ref="@vMinutes" x="198" y="192"/>
 
         <Layout ref="@vDay" x="103" y="295"/>
+        <Layout ref="@dot_sign" x="103" y="312"/>
         <Layout ref="@vMonth" x="146" y="295"/>
 
         <Layout ref="@vDayOfWeek" x="35" y="325"/>
     </Theme>
     <Theme type="normal" name="OnlySteps" bgColor="#000000" preview="@preview_1">
-        <Layout ref="@dot_sign_full_screen" x="10" y="15"/>
-
         <Layout ref="@vBluetoothIcon" x="33" y="47"/>
         <Layout ref="@vDNDIcon" x="60" y="48"/>
         <Layout ref="@vBatteryPercentage" x="139" y="50"/>
@@ -407,10 +490,49 @@
         <Layout ref="@vMinutes" x="198" y="192"/>
 
         <Layout ref="@vDay" x="103" y="295"/>
+        <Layout ref="@dot_sign" x="103" y="312"/>
         <Layout ref="@vMonth" x="146" y="295"/>
 
         <Layout ref="@vDayOfWeek" x="35" y="325"/>
 
         <Layout ref="@vStepCountCenter" x="100" y="470"/>
+    </Theme>
+    <Theme type="normal" name="AllPlusKM" bgColor="#000000" preview="@preview_2">
+        <Layout ref="@vBluetoothIcon" x="33" y="47"/>
+        <Layout ref="@vDNDIcon" x="60" y="48"/>
+        <Layout ref="@vBatteryPercentage" x="139" y="50"/>
+        <Layout ref="@vBatteryIcon" x="143" y="48"/>
+
+        <Layout ref="@vHour" x="99" y="102"/>
+        <Layout ref="@colon_sign" x="100" y="115"/>
+        <Layout ref="@vMinutes" x="198" y="102"/>
+
+        <Layout ref="@vDay" x="103" y="205"/>
+        <Layout ref="@dot_sign" x="103" y="222"/>
+        <Layout ref="@vMonth" x="146" y="205"/>
+
+        <Layout ref="@vDayOfWeek" x="35" y="235"/>
+
+        <Layout ref="@vWeatherIcon" x="45" y="285"/>
+        <Layout ref="@vCurrentTemperature" x="122" y="289"/>
+        <Layout ref="@celsius_sign_big" x="158" y="289"/>
+
+        <Layout ref="@vWeatherTempMin" x="98" y="329"/>
+        <Layout ref="@slash_sign" x="102" y="330"/>
+        <Layout ref="@vWeatherTempMax" x="114" y="329"/>
+        <Layout ref="@celsius_sign_small" x="140" y="328"/>
+
+        <Layout ref="@heart_icon" x="50" y="383"/>
+        <Layout ref="@vHeartRate" x="83" y="383"/>
+
+        <Layout ref="@calories_icon" x="50" y="411"/>
+        <Layout ref="@vCalorieCount" x="83" y="411"/>
+
+        <Layout ref="@steps_icon" x="53" y="440"/>
+        <Layout ref="@vStepCount" x="83" y="440"/>
+
+        <Layout ref="@location_icon" x="56" y="470"/>
+        <Layout ref="@vKilometers" x="80" y="470"/>
+        <Layout ref="@km_icon" x="132" y="470"/>
     </Theme>
 </Watchface>
