@@ -17,6 +17,9 @@
         <Image name="steps_icon" src="steps.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="location_icon" src="location.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="km_icon" src="km.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="edit_box" src="edit_box.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="none_preview" src="none_preview.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="wheather_preview" src="wheather_preview.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <ImageArray name="numbers_big_white" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="numbers_big_white/0.png"/>
             <Image src="numbers_big_white/1.png"/>
@@ -91,7 +94,7 @@
             <Image src="numbers_medium_grey/10.png"/>
         </ImageArray>
         <!--
-		<ImageArray name="seconds_as_colon" compressMethod="none" format="RGBA32" recolorEnable="false">
+        <ImageArray name="seconds_as_colon" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="seconds_as_colon/0.png"/>
             <Image src="seconds_as_colon/1.png"/>
             <Image src="seconds_as_colon/2.png"/>
@@ -153,7 +156,7 @@
             <Image src="seconds_as_colon/58.png"/>
             <Image src="seconds_as_colon/59.png"/>
         </ImageArray>
-		-->
+        -->
         <ImageArray name="kilometers" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="kilometers/0.png"/>
             <Image src="kilometers/1.png"/>
@@ -265,7 +268,7 @@
             <Param value="100"/>
         </DataItemImageValues>
         <!--
-		<DataItemImageValues name="vSecondsAsColon" source="timeSecond" ref="@seconds_as_colon" renderRule="alwaysShow" rotation="0">
+        <DataItemImageValues name="vSecondsAsColon" source="timeSecond" ref="@seconds_as_colon" renderRule="alwaysShow" rotation="0">
             <Param value="0"/>
             <Param value="1"/>
             <Param value="2"/>
@@ -327,7 +330,7 @@
             <Param value="58"/>
             <Param value="59"/>
         </DataItemImageValues>
-		-->
+        -->
         <DataItemImageValues name="vKilometers" source="healthStepCount" ref="@kilometers" renderRule="alwaysShow" rotation="0">
             <Param value="0"/>
             <Param value="500"/>
@@ -416,7 +419,26 @@
         <DataItemImageNumber name="vWeatherTempMax" source="weatherTodayTemperatureMax" ref="@numbers_small_grey" totalDigits="2" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
         <DataItemImageNumber name="vCalorieCount" source="healthCalorieValue" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
         <DataItemImageNumber name="vHeartRate" source="healthHeartRate" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
-        <!--Resources of theme 1-->
+
+        <Widget name="WidgetWheather" w="190" h="65" widgetName="Wheather" groupType="general" preview="@wheather_preview" editbox="@edit_box">
+            <Item ref="@vWeatherIcon" x="45" y="0"/>
+            <Item ref="@vCurrentTemperature" x="122" y="4"/>
+            <Item ref="@celsius_sign_big" x="158" y="4"/>
+
+            <Item ref="@vWeatherTempMin" x="98" y="44"/>
+            <Item ref="@slash_sign" x="102" y="45"/>
+            <Item ref="@vWeatherTempMax" x="114" y="44"/>
+            <Item ref="@celsius_sign_small" x="140" y="43"/>
+        </Widget>
+
+        <Widget name="WidgetEmpty" w="190" h="65" widgetName="None" groupType="general" preview="@none_preview" editbox="@edit_box">
+        </Widget>
+
+        <Slot name="SlotWheather" type="widget">
+            <Item ref="@WidgetWheather"/>
+            <Item ref="@WidgetEmpty"/>
+        </Slot>
+
     </Resources>
     <Theme type="normal" name="All" bgColor="#000000" preview="@preview_0">
         <Layout ref="@vBluetoothIcon" x="33" y="47"/>
@@ -512,15 +534,8 @@
         <Layout ref="@vMonth" x="146" y="205"/>
 
         <Layout ref="@vDayOfWeek" x="35" y="235"/>
-
-        <Layout ref="@vWeatherIcon" x="45" y="285"/>
-        <Layout ref="@vCurrentTemperature" x="122" y="289"/>
-        <Layout ref="@celsius_sign_big" x="158" y="289"/>
-
-        <Layout ref="@vWeatherTempMin" x="98" y="329"/>
-        <Layout ref="@slash_sign" x="102" y="330"/>
-        <Layout ref="@vWeatherTempMax" x="114" y="329"/>
-        <Layout ref="@celsius_sign_small" x="140" y="328"/>
+        
+        <Layout ref="@SlotWheather" x="0" y="285"/>
 
         <Layout ref="@heart_icon" x="50" y="383"/>
         <Layout ref="@vHeartRate" x="83" y="383"/>
