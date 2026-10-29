@@ -157,6 +157,7 @@
             <Image src="seconds_as_colon/59.png"/>
         </ImageArray>
         -->
+       <!-- 
         <ImageArray name="kilometers" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="kilometers/0.png"/>
             <Image src="kilometers/1.png"/>
@@ -199,6 +200,7 @@
             <Image src="kilometers/38.png"/>
             <Image src="kilometers/39.png"/>
         </ImageArray>
+        -->
         <ImageArray name="weather_icons" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="weather_icons/0.png"/>
             <Image src="weather_icons/1.png"/>
@@ -245,6 +247,7 @@
             <Image src="numbers_small_grey/8.png"/>
             <Image src="numbers_small_grey/9.png"/>
             <Image src="numbers_small_grey/10.png"/>
+            <Image src="numbers_small_grey/11.png"/>
         </ImageArray>
         <DataItemImageValues name="vDayOfWeek" source="dateWeek" ref="@day_of_week_name" renderRule="alwaysShow" rotation="0">
             <Param value="0"/>
@@ -331,6 +334,8 @@
             <Param value="59"/>
         </DataItemImageValues>
         -->
+
+        <!--
         <DataItemImageValues name="vKilometers" source="healthStepCount" ref="@kilometers" renderRule="alwaysShow" rotation="0">
             <Param value="0"/>
             <Param value="500"/>
@@ -373,6 +378,7 @@
             <Param value="19000"/>
             <Param value="19500"/>
         </DataItemImageValues>
+        -->
         <DataItemImageValues name="vWeatherIcon" source="weatherCurrentWeather" ref="@weather_icons" renderRule="alwaysShow" rotation="0">
             <Param value="0"/>
             <Param value="1"/>
@@ -415,6 +421,7 @@
         <DataItemImageNumber name="vMinutes" source="timeMinute" ref="@numbers_big_white" totalDigits="2" decimalDigits="0" align="right" leadingZero="true" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
         <DataItemImageNumber name="vStepCount" source="healthStepCount" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
         <DataItemImageNumber name="vStepCountCenter" source="healthStepCount" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="center" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
+        <DataItemImageNumber name="vStepKiloMeter" source="healthStepKiloMeter" ref="@numbers_small_grey" totalDigits="5" decimalDigits="2" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="-6" space="0"/>
         <DataItemImageNumber name="vWeatherTempMin" source="weatherTodayTemperatureMin" ref="@numbers_small_grey" totalDigits="2" decimalDigits="0" align="right" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
         <DataItemImageNumber name="vWeatherTempMax" source="weatherTodayTemperatureMax" ref="@numbers_small_grey" totalDigits="2" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
         <DataItemImageNumber name="vCalorieCount" source="healthCalorieValue" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
@@ -547,7 +554,7 @@
         <Layout ref="@vStepCount" x="83" y="440"/>
 
         <Layout ref="@location_icon" x="56" y="470"/>
-        <Layout ref="@vKilometers" x="80" y="470"/>
-        <Layout ref="@km_icon" x="132" y="470"/>
+        <Layout ref="@vStepKiloMeter" x="83" y="470"/>
+        <Layout ref="@km_icon" x="139" y="474"/>
     </Theme>
 </Watchface>
