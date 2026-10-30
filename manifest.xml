@@ -19,7 +19,7 @@
         <Image name="km_icon" src="km.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="edit_box" src="edit_box.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <Image name="none_preview" src="none_preview.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
-        <Image name="wheather_preview" src="wheather_preview.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
+        <Image name="weather_preview" src="weather_preview.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
         <ImageArray name="numbers_big_white" compressMethod="none" format="RGBA32" recolorEnable="false">
             <Image src="numbers_big_white/0.png"/>
             <Image src="numbers_big_white/1.png"/>
@@ -427,7 +427,7 @@
         <DataItemImageNumber name="vCalorieCount" source="healthCalorieValue" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
         <DataItemImageNumber name="vHeartRate" source="healthHeartRate" ref="@numbers_small_grey" totalDigits="5" decimalDigits="0" align="left" leadingZero="false" trailingZero="false" renderRule="alwaysShow" rotation="0" decimalOffsetX="0" space="0"/>
 
-        <Widget name="WidgetWheather" w="190" h="65" widgetName="Wheather" groupType="general" preview="@wheather_preview" editbox="@edit_box">
+        <Widget name="WidgetWeather" w="190" h="65" widgetName="Weather" groupType="general" preview="@weather_preview" editbox="@edit_box">
             <Item ref="@vWeatherIcon" x="45" y="0"/>
             <Item ref="@vCurrentTemperature" x="122" y="4"/>
             <Item ref="@celsius_sign_big" x="158" y="4"/>
@@ -441,8 +441,8 @@
         <Widget name="WidgetEmpty" w="190" h="65" widgetName="None" groupType="general" preview="@none_preview" editbox="@edit_box">
         </Widget>
 
-        <Slot name="SlotWheather" type="widget">
-            <Item ref="@WidgetWheather"/>
+        <Slot name="SlotWeather" type="widget">
+            <Item ref="@WidgetWeather"/>
             <Item ref="@WidgetEmpty"/>
         </Slot>
 
@@ -542,7 +542,7 @@
 
         <Layout ref="@vDayOfWeek" x="35" y="235"/>
         
-        <Layout ref="@SlotWheather" x="0" y="285"/>
+        <Layout ref="@SlotWeather" x="0" y="285"/>
 
         <Layout ref="@heart_icon" x="50" y="383"/>
         <Layout ref="@vHeartRate" x="83" y="383"/>
