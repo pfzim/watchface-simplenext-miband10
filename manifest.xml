@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Watchface id="117459711" name="SimpleNext_v3.2">
+<Watchface id="117459711" name="SimpleNext_v3.5">
     <Resources>
         <!--Resources of theme 0-->
         <Image name="preview_0" src="preview_0.png" compressMethod="none" format="RGBA32" recolorEnable="false"/>
